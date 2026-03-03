@@ -62,7 +62,7 @@ function AccordionItems({ questionObj, curOpen, onSet, num }) {
   console.log(isOpen);
 
   function handleClickOpen() {
-    onSet((isOpen) => (isOpen ? null : num));
+    onSet(isOpen ? null : num);
   }
   return (
     <div className="question">
